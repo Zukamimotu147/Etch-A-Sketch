@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Etch-A-Sketch</h1>
+    </header>
+    <main class="main-container">
+      <div class="controls-field">
+        <div class="controls">
+          <div class="color-picker-container">
+            <p>Color Picker:</p>
+            <input type="color" class="color-picker" id="js-color-pick" />
+          </div>
+          <input type="range" min="2" max="64" class="size-slider" id="js-size-slider" />
+        </div>
+      </div>
+      <div class="etch-container">
+        <div class="grid-container"></div>
+        <div class="white-img-button">
+          <img class="etch-img-btn" src="asset/white-btn.png" alt="white button" />
+          <img class="etch-img-btn" src="asset/white-btn.png" alt="white button" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
