@@ -4,6 +4,8 @@
 /* font-family: "Comic Neue", cursive; */
 :root {
     --mainbg-color: #3d5a80;
+    --ff-main: "Euphoria Script", cursive;
+    --ff-submain: "Comic Neue", cursive;
 }
 
 * {
@@ -20,7 +22,6 @@ body {
 .main-container {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 /* header */
@@ -28,7 +29,7 @@ body {
 .header h1 {
     padding: 40px;
     font-size: 5rem;
-    font-family: "Euphoria Script", cursive;
+    font-family: var(--ff-main);
     text-align: center;
     
 }
@@ -57,4 +58,59 @@ body {
     height: 440px;
     width: 100%;
 }
+
+.control-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: var(--ff-submain);
+}
+
+.control-field button {
+    color: black;
+    border: 2px solid var(--mainbg-color);
+    background: transparent;
+    padding: 18px 36px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 var(--mainbg-color);
+    transition: ease-out 0.4s;
+}
+
+.control-field button:hover {
+    color: #fff;
+    box-shadow: inset 400px 0 0 0 var(--mainbg-color);
+  }
+
+.color-picker-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.color-picker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.color-picker::-webkit-color-swatch {
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.color-picker::-moz-color-swatch {
+    border-radius: 50%;
+    border: 4px solid #fff
+  }
+
+
 
