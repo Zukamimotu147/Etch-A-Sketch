@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Euphoria+Script&display=swap');
 
+/* font-family: "Comic Neue", cursive; */
 :root {
     --mainbg-color: #3d5a80;
 }
@@ -29,7 +30,7 @@ body {
     font-size: 5rem;
     font-family: "Euphoria Script", cursive;
     text-align: center;
-    /* font-family: "Comic Neue", cursive; */
+    
 }
 
 /* main */
@@ -56,3 +57,4 @@ body {
     height: 440px;
     width: 100%;
 }
+
