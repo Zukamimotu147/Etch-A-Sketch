@@ -11,15 +11,18 @@
       <h1>Etch-A-Sketch</h1>
     </header>
     <main class="main-container">
-      <div class="controls-field">
-        <div class="controls">
-          <div class="color-picker-container">
-            <p>Color Picker:</p>
-            <input type="color" class="color-picker" id="js-color-pick" />
-          </div>
-          <input type="range" min="2" max="64" class="size-slider" id="js-size-slider" />
+      <div class="control-field">
+        <div class="color-picker-container">
+          <p>Color Picker:</p>
+          <input type="color" class="color-picker" id="js-color-pick" />
         </div>
+        <button id="js-rainbow-color">Rainbow Color</button>
+        <button id="show-gridlines">Show Grid Lines</button>
+        <button id="js-clear-grid">Clear</button>
+        <p class="js-size-value">Size: 2</p>
+        <input type="range" min="2" max="64" class="size-slider" value="2" id="js-size-slider" />
       </div>
+
       <div class="etch-container">
         <div class="grid-container"></div>
         <div class="white-img-button">
