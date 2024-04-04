@@ -4,15 +4,20 @@ const sizeSlider = document.querySelector('#js-size-slider');
 
 
 let size = 16;
-//show size
+//get size
 sizeSlider.addEventListener('mouseup', (event) => {
+    
     size = event.target.value;
+    console.log(size);
+    createGrid(size);
     
 });
-//get size
+
+//show size
 sizeSlider.addEventListener('input', (event) => {
     showSize.textContent = `Size: ${event.target.value}`; 
 });
+
 //create grid
 function createGrid(size) {
     for (let i = 0; i < size; i++) {
@@ -21,7 +26,11 @@ function createGrid(size) {
         grid.appendChild(row);
         for(let j = 0; j < size; j++) {
             let col = document.createElement('div');
-            col.classList.add('grid-item');
+            let currentColor = changeColor();
+            col.classList.add('grid-item-sub');
+            col.addEventListener('mousedown', () => {
+                col.style.backgroundColor = currentColor;
+            })
             row.appendChild(col);
         }
     }
@@ -29,9 +38,11 @@ function createGrid(size) {
 
 function changeColor() {
     document.querySelector('#js-color-pick').addEventListener('change', (event) => {
-        console.log(event.target.value);
+        let color = event.target.value;
+
+        return color;
     })
 }
 
-changeColor();
+
 
