@@ -54,9 +54,26 @@ body {
 }
 
 .grid-container {
-    background-color: white;
+    display: flex;
+    flex-shrink: 1;
+    background-color: black;
     height: 440px;
+    width: 510px;
+}
+
+.grid-item {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex: 1 1 0%;
+}
+
+.grid-item-sub {
+    height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
 }
 
 .control-field {
