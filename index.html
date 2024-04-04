@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-A-Sketch</title>
+    <link rel="icon" href="asset/paintbrush-solid.svg" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -11,26 +12,24 @@
       <h1>Etch-A-Sketch</h1>
     </header>
     <main class="main-container">
-      <div class="control-field">
+      <section class="control-field">
         <div class="color-picker-container">
           <p>Color Picker:</p>
           <input type="color" class="color-picker" id="js-color-pick" />
         </div>
         <button id="js-rainbow-color">Rainbow Color</button>
-        <button id="show-gridlines">Show Grid Lines</button>
+        <!-- not done -->
+        <button id="js-eraser">Erase</button>
         <button id="js-clear-grid">Clear</button>
-        <p class="js-size-value">Size: 2</p>
-        <input type="range" min="2" max="64" class="size-slider" value="2" id="js-size-slider" />
-      </div>
+        <p class="js-size-value">Size: 2 x 2</p>
+        <input type="range" min="2" max="64" value="2" id="js-size-slider" />
+      </section>
 
-      <div class="etch-container">
-        <div class="grid-container"></div>
-        <div class="white-img-button">
-          <img class="etch-img-btn" src="asset/white-btn.png" alt="white button" />
-          <img class="etch-img-btn" src="asset/white-btn.png" alt="white button" />
-        </div>
-      </div>
+      <section class="etch-container">
+        <div class="grid-container" id="js-grid-container"></div>
+      </section>
     </main>
+
     <script src="script.js" defer></script>
   </body>
 </html>
