@@ -59,6 +59,11 @@ body {
     width: 100%;
 }
 
+.grid-item {
+    display: flex;
+    flex: 1;
+}
+
 .control-field {
     display: flex;
     flex-direction: column;
